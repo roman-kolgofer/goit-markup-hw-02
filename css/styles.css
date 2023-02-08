@@ -9,7 +9,9 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--color-text);
   background-color: var(--color-main);
 }
@@ -20,14 +22,13 @@ ul {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  color: var(--color-dark);
   text-decoration: none;
   text-transform: uppercase;
 }
-header .logo {
-  line-height: 1.33;
-  color: var(--color-dark);
-}
-footer .logo {
+.footer .logo {
   line-height: 1.16;
   color: var(--color-light);
 }
@@ -53,20 +54,21 @@ footer .logo {
 .contacts-item:focus {
   color: var(--color-pressed-state);
 }
+.hero {
+  background-color: var(--color-dark);
+}
 .hero-title {
   font-size: 56px;
-  font-weight: 700;
   line-height: 1.07;
   color: var(--color-main);
   text-align: center;
-
-  background-color: var(--color-dark); /* remove */
 }
 .hero-button {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   color: var(--color-main);
   background-color: var(--color-primary-brand);
   border: none;
@@ -76,18 +78,23 @@ footer .logo {
 .hero-button:focus {
   background-color: var(--color-pressed-state);
 }
-.secondary-title {
+.section-subtitle {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   color: var(--color-dark);
 }
-.main-title {
+.section-title {
   font-size: 36px;
-  font-weight: 700;
   line-height: 1.11;
   text-align: center;
   color: var(--color-dark);
+}
+.section-team {
+  background-color: var(--color-light);
+}
+.footer {
+  background-color: var(--color-dark);
 }
 .footer-text {
   color: var(--color-accent);
@@ -97,6 +104,7 @@ footer .logo {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   color: var(--color-primary-brand);
   background-color: var(--color-light);
   border: none;
